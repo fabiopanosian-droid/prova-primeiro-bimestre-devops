@@ -1,0 +1,3 @@
+NAME           IMAGE                                                                     COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+reservas-api   sha256:41f3d2c22a77f0b76c96ce73c897c03e23af14a4a570298040c0057571cf9818   "docker-entrypoint.s…"   api       2 minutes ago    Up 2 minutes              0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+reservas-db    postgres:15-alpine                                                        "docker-entrypoint.s…"   db        23 minutes ago   Up 23 minutes (healthy)   5432/tcp

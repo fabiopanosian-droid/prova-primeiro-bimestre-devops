@@ -1,0 +1,66 @@
+ Image prova-primeiro-bimestre-devops-api Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 640B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 456B 0.0s done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:22-alpine
+#3 DONE 0.8s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 109B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [dependencies 1/4] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#6 resolve docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402 0.2s done
+#6 DONE 0.2s
+
+#5 [internal] load build context
+#5 transferring context: 157B 0.1s done
+#5 DONE 0.1s
+
+#7 [dependencies 3/4] COPY package*.json ./
+#7 CACHED
+
+#8 [runtime 4/7] COPY --from=dependencies /app/node_modules ./node_modules
+#8 CACHED
+
+#9 [runtime 5/7] COPY package*.json ./
+#9 CACHED
+
+#10 [runtime 6/7] COPY src ./src
+#10 CACHED
+
+#11 [runtime 3/7] RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+#11 CACHED
+
+#12 [dependencies 4/4] RUN npm ci --omit=dev
+#12 CACHED
+
+#13 [dependencies 2/4] WORKDIR /app
+#13 CACHED
+
+#14 [runtime 7/7] RUN chown -R appuser:appgroup /app
+#14 CACHED
+
+#15 exporting to image
+#15 exporting layers 0.0s done
+#15 exporting manifest sha256:cd3b1d35d7a23497137fd59606b2970666b00f8f3c9fd21b14dcd84350e940c6 0.0s done
+#15 exporting config sha256:de3f93a19a186a57c521413c0e197222608424b6e92810f8952917f8b1dd7956 0.0s done
+#15 exporting attestation manifest sha256:9d5acfba91a9e30a7949af69c9be18c7e586d8da895841942683424f1e82486b 0.1s done
+#15 exporting manifest list sha256:c02ed359a77300e3e44290c515596b71e4414d77fb9a3ae79d115ab63163f28f
+#15 exporting manifest list sha256:c02ed359a77300e3e44290c515596b71e4414d77fb9a3ae79d115ab63163f28f 0.2s done
+#15 naming to docker.io/library/prova-primeiro-bimestre-devops-api:latest
+#15 naming to docker.io/library/prova-primeiro-bimestre-devops-api:latest 0.0s done
+#15 unpacking to docker.io/library/prova-primeiro-bimestre-devops-api:latest 0.1s done
+#15 DONE 0.7s
+
+#16 resolving provenance for metadata file
+#16 DONE 0.0s
+ Image prova-primeiro-bimestre-devops-api Built 
