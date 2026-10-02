@@ -1,0 +1,11 @@
+]633;E;echo "=== TERRAFORM VALIDATE ===";dc0993b3-a9ff-4125-8720-dd4523e56a35]633;C=== TERRAFORM VALIDATE ===
+[32m[1mSuccess![0m The configuration is valid.
+[0m
+
+=== S3 VERSIONING ===
+{
+    "Status": "Enabled"
+}
+
+=== DYNAMODB LOCKING ===
+ACTIVE
