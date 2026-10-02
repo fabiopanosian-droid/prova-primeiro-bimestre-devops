@@ -43,6 +43,7 @@ resource "aws_instance" "this" {
               DB_NAME=reservas
               DB_USER=${var.db_username}
               DB_PASSWORD=${var.db_password}
+DB_SSL=true
               PORT=3000
               ENV
 
