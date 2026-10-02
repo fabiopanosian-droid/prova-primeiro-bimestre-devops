@@ -22,6 +22,3 @@ A infraestrutura utiliza módulos para VPC, Security Groups, EC2 e RDS, além de
 - AWS
 - Git/GitHub
 
-## Status
-
-Em desenvolvimento.
